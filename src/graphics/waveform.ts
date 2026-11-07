@@ -92,3 +92,4 @@ export function initHeroWaveform(canvasId: string): void {
 
   draw();
 }
+

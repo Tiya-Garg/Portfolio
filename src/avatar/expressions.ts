@@ -70,3 +70,4 @@ export function applyExpression(svg: SVGSVGElement, expression: ExpressionName):
       break;
   }
 }
+

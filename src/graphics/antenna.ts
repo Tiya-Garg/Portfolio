@@ -88,3 +88,4 @@ export function initAntennaGraphic(containerId: string): void {
     updateLobe(Number((e.target as HTMLInputElement).value));
   });
 }
+

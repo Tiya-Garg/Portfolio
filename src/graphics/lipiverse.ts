@@ -68,3 +68,4 @@ export function initLipiVerseGraphic(containerId: string): void {
     }, 250);
   });
 }
+

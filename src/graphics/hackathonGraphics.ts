@@ -112,3 +112,4 @@ export function initSecondShiftGraphic(containerId: string): void {
     </div>
   `;
 }
+

@@ -74,3 +74,4 @@ export function initEasterEggs(onKonami: () => void, onRaft: () => void): void {
     setTimeout(() => toast.remove(), 4000);
   }
 }
+

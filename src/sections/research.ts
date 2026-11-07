@@ -41,3 +41,4 @@ export function renderResearch(): string {
 export function initResearch(): void {
   initAntennaGraphic('graphic-antenna');
 }
+

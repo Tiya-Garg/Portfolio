@@ -110,3 +110,4 @@ export function initAbout(): void {
     ease: 'power3.out'
   });
 }
+

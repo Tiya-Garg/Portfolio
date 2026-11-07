@@ -120,3 +120,4 @@ export function initDistribuQGraphic(containerId: string): void {
     statusText.textContent = 'Leader: Node 1 (Term 1)';
   });
 }
+

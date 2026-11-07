@@ -59,3 +59,4 @@ export function initMarquee(): void {
     marquee.style.transform = `translateX(${xPos}px)`;
   });
 }
+

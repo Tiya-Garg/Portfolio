@@ -102,3 +102,4 @@ export function initFreqBridgeGraphic(containerId: string): void {
     }, 1500);
   });
 }
+

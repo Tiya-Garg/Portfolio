@@ -170,3 +170,4 @@ export function initWork(): void {
     });
   });
 }
+

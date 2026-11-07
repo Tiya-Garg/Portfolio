@@ -26,3 +26,4 @@ export function renderToolkit(): string {
 export function initToolkit(): void {
   initPatchbayGraphic('graphic-patchbay');
 }
+

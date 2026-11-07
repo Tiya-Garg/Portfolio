@@ -324,3 +324,4 @@ export const SITE_CONTENT = {
     "Signal locked at 47 GHz."
   ]
 };
+

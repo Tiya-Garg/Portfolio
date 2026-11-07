@@ -344,3 +344,4 @@ export function initAvatar(containerId: string): AvatarController | null {
     undock
   };
 }
+

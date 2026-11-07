@@ -57,3 +57,4 @@ To update any text or add new projects, simply edit `SITE_CONTENT` in that file 
 ## 🚢 Deployment to GitHub Pages
 The project includes a fully automated GitHub Actions CI/CD workflow at `.github/workflows/deploy.yml`.
 Pushes to `main` or manual trigger via `workflow_dispatch` will automatically build the site and deploy the `dist/` directory to GitHub Pages.
+

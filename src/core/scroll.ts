@@ -47,3 +47,4 @@ export function initScroll(): Lenis {
 export function getLenis(): Lenis | null {
   return lenisInstance;
 }
+

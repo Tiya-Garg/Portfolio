@@ -68,3 +68,4 @@ export function initEventGuardGraphic(containerId: string): void {
   budgetSlider?.addEventListener('input', updateKnapsack);
   coverageSlider?.addEventListener('input', updateKnapsack);
 }
+

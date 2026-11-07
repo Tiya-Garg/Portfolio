@@ -9,3 +9,4 @@ export function onReducedMotionChange(callback: (reduced: boolean) => void): voi
     callback(e.matches);
   });
 }
+
