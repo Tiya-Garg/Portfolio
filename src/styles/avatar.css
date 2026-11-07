@@ -1,0 +1,82 @@
+/* Avatar Container Styles */
+.avatar-hero-container {
+  position: absolute;
+  top: 50%;
+  right: clamp(1rem, 5vw, 6rem);
+  transform: translateY(-46%);
+  width: clamp(260px, 34vw, 460px);
+  height: clamp(340px, 44vw, 580px);
+  z-index: var(--z-avatar-hero);
+  pointer-events: auto;
+  cursor: pointer;
+  filter: drop-shadow(0 12px 32px rgba(14, 14, 16, 0.08));
+  transition: filter 0.3s ease;
+}
+
+.avatar-hero-container:hover {
+  filter: drop-shadow(0 16px 40px rgba(255, 91, 58, 0.18));
+}
+
+.avatar-svg-root {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Docked Avatar Bottom-Right */
+.avatar-docked-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 96px;
+  height: 120px;
+  z-index: var(--z-docked-avatar);
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px) scale(0.85);
+  transition: opacity 0.35s var(--ease-out), transform 0.35s var(--ease-out), visibility 0.35s;
+}
+
+.avatar-docked-wrapper.is-docked {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+/* Speech bubble */
+.avatar-speech-bubble {
+  position: absolute;
+  bottom: 110%;
+  right: 0;
+  width: max-content;
+  max-width: 220px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  padding: 0.6rem 0.85rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+  transition: opacity 0.25s var(--ease-out), transform 0.25s var(--ease-out);
+}
+
+.avatar-speech-bubble::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 32px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--ink) transparent transparent transparent;
+}
+
+.avatar-speech-bubble.bubble-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

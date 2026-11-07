@@ -1,0 +1,42 @@
+:root {
+  /* Color Palette */
+  --paper: #EDE7DA;
+  --paper-2: #E2DACA;
+  --ink: #0E0E10;
+  --ink-light: #2A2A2E;
+  --ink-muted: #6B6A70;
+  --blue: #2A3CFF;
+  --blue-dark: #1927B5;
+  --blue-soft: #EEF0FF;
+  --coral: #FF5B3A;
+  --coral-soft: #FFEAE5;
+  --lime: #C8F031;
+  --white: #FFFFFF;
+
+  /* Typography */
+  --font-display: 'Anton', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Instrument Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-hand: 'Caveat', cursive;
+
+  /* Spacing */
+  --gutter: clamp(1.5rem, 6vw, 5rem);
+  --max-width: 1400px;
+  --section-pad: clamp(5rem, 10vw, 8.5rem);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);
+  --duration-std: 0.8s;
+
+  /* Z-indices */
+  --z-bg: 0;
+  --z-content: 10;
+  --z-avatar-hero: 15;
+  --z-nav: 50;
+  --z-tuner: 60;
+  --z-docked-avatar: 80;
+  --z-cursor: 90;
+  --z-loader: 100;
+}

@@ -1,0 +1,116 @@
+/* Cursor System */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--coral);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s;
+  mix-blend-mode: difference;
+}
+
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  transition: width 0.25s var(--ease-out), 
+              height 0.25s var(--ease-out), 
+              background-color 0.25s,
+              border-color 0.25s,
+              opacity 0.2s;
+  mix-blend-mode: difference;
+}
+
+.cursor-trail-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: calc(var(--z-cursor) - 1);
+}
+
+/* Cursor States */
+body.cursor-link .custom-cursor-ring {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 91, 58, 0.15);
+  border-color: var(--coral);
+}
+
+body.cursor-view .custom-cursor-ring {
+  width: 68px;
+  height: 68px;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+body.cursor-copy .custom-cursor-ring {
+  width: 64px;
+  height: 64px;
+  background: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
+}
+
+body.cursor-avatar .custom-cursor-ring {
+  width: 48px;
+  height: 48px;
+  border-color: var(--coral);
+  background: rgba(255, 91, 58, 0.2);
+}
+
+/* Loader Styles */
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--ink);
+  z-index: var(--z-loader);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--paper);
+}
+
+.loader-canvas {
+  width: min(80vw, 480px);
+  height: 120px;
+}
+
+.loader-counter {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.loader-status {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--coral);
+  text-transform: uppercase;
+}
