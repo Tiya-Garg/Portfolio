@@ -1,7 +1,5 @@
-import gsap from 'gsap';
 import { SITE_CONTENT } from '../content';
 import { initHeroWaveform } from '../graphics/waveform';
-import { renderAvatarSvg } from '../avatar/avatar.svg';
 import { initAvatar } from '../avatar/avatarController';
 
 export function renderHero(): string {
@@ -29,10 +27,8 @@ export function renderHero(): string {
             <span class="hero-line hero-line-2" style="display:block; color:var(--blue);">${c.titleLine2}</span>
           </h1>
 
-          <!-- Avatar Embedded for Depth (between layers) -->
-          <div id="avatar-hero-anchor" class="avatar-hero-container" data-cursor="avatar" role="img" aria-label="Tiya Garg illustrated animated companion">
-            ${renderAvatarSvg()}
-          </div>
+          <!-- Avatar v2 Container (mounted via createAvatar) -->
+          <div id="avatar-hero-anchor" class="avatar-hero-container" data-cursor="avatar" role="img" aria-label="Tiya Garg illustrated animated companion"></div>
         </div>
 
         <!-- Pitch & CTAs -->
@@ -95,17 +91,6 @@ export function initHero(): void {
   splitChars(title2);
 
   // Stagger entry
-  gsap.from('.hero-char', {
-    y: 90,
-    opacity: 0,
-    skewY: 8,
-    stagger: 0.045,
-    duration: 0.9,
-    ease: 'power4.out',
-    delay: 0.2
-  });
-
-  // Cursor distance wobble
   const chars = document.querySelectorAll<HTMLElement>('.hero-char');
   window.addEventListener('mousemove', (e) => {
     chars.forEach((char) => {
@@ -123,4 +108,3 @@ export function initHero(): void {
     });
   });
 }
-

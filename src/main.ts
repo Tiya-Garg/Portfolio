@@ -18,7 +18,7 @@ import { renderAbout, initAbout } from './sections/about';
 import { renderResearch, initResearch } from './sections/research';
 import { renderToolkit, initToolkit } from './sections/toolkit';
 import { renderContact, initContact } from './sections/contact';
-import { renderAvatarSvg } from './avatar/avatar.svg';
+import { createAvatar } from './avatar/avatar.v2';
 
 const app = document.getElementById('app');
 
@@ -70,9 +70,9 @@ if (app) {
     <canvas id="scroll-progress" class="scroll-progress-canvas" aria-hidden="true"></canvas>
 
     <!-- Docked Avatar Companion (Bottom-Right) -->
-    <div class="avatar-docked-wrapper" data-cursor="avatar" role="button" aria-label="Tiya companion avatar">
+    <div id="avatar-docked-anchor" class="avatar-docked-wrapper" data-cursor="avatar" role="button" aria-label="Tiya companion avatar">
       <div class="avatar-speech-bubble">Ask me about leader election.</div>
-      ${renderAvatarSvg()}
+      <div id="docked-avatar-inner" style="width:100%; height:100%;"></div>
     </div>
 
     <!-- Main Content Flow -->
@@ -86,6 +86,12 @@ if (app) {
       ${renderContact()}
     </main>
   `;
+
+  // Mount docked companion avatar instance
+  const dockedInner = document.getElementById('docked-avatar-inner');
+  if (dockedInner) {
+    createAvatar(dockedInner);
+  }
 
   // Boot sequence
   initScroll();
@@ -119,4 +125,3 @@ if (app) {
     }
   );
 }
-
