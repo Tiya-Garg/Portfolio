@@ -1,382 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiya Garg | AI/ML Engineer & Backend Systems Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <!-- Primary Meta Tags -->
+    <title>Tiya Garg — AI/ML & Distributed Systems</title>
+    <meta name="title" content="Tiya Garg — AI/ML & Distributed Systems" />
+    <meta name="description" content="Third-year ECE (AI) undergraduate at IGDTUW building distributed systems, real-time backends, and AI pipelines. Open to Summer 2027 SWE & AI/ML internships." />
+    <meta name="theme-color" content="#EDE7DA" />
 
-    <!-- Ambient Background Blobs for Pop of Color -->
-    <div class="ambient-bg">
-        <div class="ambient-blob blob-blue"></div>
-        <div class="ambient-blob blob-yellow"></div>
-        <div class="ambient-blob blob-pink"></div>
-    </div>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tiya-garg.github.io/Portfolio/" />
+    <meta property="og:title" content="Tiya Garg — AI/ML & Distributed Systems" />
+    <meta property="og:description" content="Distributed systems, real-time backends, and AI pipelines. Seeking Summer 2027 SWE & AI/ML internships." />
+    <meta property="og:image" content="./assets/og.png" />
 
-    <!-- Sticky Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="logo">Tiya Garg</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#experience">Experience & Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://tiya-garg.github.io/Portfolio/" />
+    <meta property="twitter:title" content="Tiya Garg — AI/ML & Distributed Systems" />
+    <meta property="twitter:description" content="Distributed systems, real-time backends, and AI pipelines. Seeking Summer 2027 SWE & AI/ML internships." />
+    <meta property="twitter:image" content="./assets/og.png" />
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section-spacing">
-        <div class="container hero-container grid-layout">
-            <div class="hero-content fade-in">
-                <p class="greeting">Hi, I am</p>
-                <h1 class="hero-name">TIYA GARG</h1>
-                <h2 class="hero-tagline">AI/ML Engineer &bull; Backend & Distributed Systems &bull; ECE-AI Undergraduate</h2>
-                <div class="ai-terminal card glass">
-                    <div class="terminal-header">
-                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                        <span class="terminal-title">systems_ai_bot</span>
-                    </div>
-                    <div class="terminal-body">
-                        <span id="typing-bio" class="typing-text"></span><span class="cursor blink">|</span>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="mailto:tiyagarg0706@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://linkedin.com/in/tiya-garg-a72b2931a" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/TiyaGarg06" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://drive.google.com/file/d/1-Rw1Hzf3HRx0KZc81MScnAR5xbbV0ffL/view?usp=sharing" target="_blank" class="social-icon" aria-label="Resume"><i class="fas fa-file-pdf"></i></a>
-                </div>
-                <div class="hero-action">
-                    <a href="#about" class="btn primary-btn">More About Me</a>
-                    <a href="#experience" class="btn secondary-btn">View Projects</a>
-                </div>
-            </div>
-            <div class="hero-visual fade-in">
-                <!-- Using a soft CSS-based abstract shape profile placeholder -->
-                <div class="profile-image-container">
-                    <img src="profile.png" alt="Tiya Avatar" class="profile-img">
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
 
-    <!-- Metrics Banner -->
-    <section id="metrics" class="metrics-banner fade-in">
-        <div class="container container-metrics">
-            <div class="metric-item">
-                <span class="metric-number" data-target="3">0</span>
-                <span class="metric-label">Hackathon Milestones</span>
-            </div>
-            <div class="metric-item">
-                <span class="metric-number" data-target="4">0</span>
-                <span class="metric-label">Major Projects</span>
-            </div>
-            <div class="metric-item">
-                <span class="metric-number">7.76</span>
-                <span class="metric-label">CGPA</span>
-            </div>
-            <div class="metric-item">
-                <span class="metric-number" data-target="3">0</span>
-                <span class="metric-label">Backend Systems Built</span>
-            </div>
-        </div>
-    </section>
+    <!-- Google Fonts with display=swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    <!-- About & Education Section -->
-    <section id="about" class="about section-spacing alt-bg">
-        <div class="container">
-            <h2 class="section-title fade-in">Professional Summary & Education</h2>
-            <div class="grid-layout fade-in">
-                <div class="about-text card soft-shadow">
-                    <h3>Summary</h3>
-                    <p>
-                        Third-year ECE (AI) undergraduate with hands-on experience building GenAI and NLP systems — multilingual transformer pipelines, prompt engineering — alongside real-time backend systems, market-based multi-agent simulations, and constrained-optimization platforms across hackathons and independent projects. Strong foundation in Python/C++, applied ML, and systems design. Interested in applying NLP/GenAI and optimization techniques to fintech and market-systems products.
-                    </p>
-                </div>
-                <div class="education card soft-shadow">
-                    <h3>Education</h3>
-                    <div class="timeline-item">
-                        <h4 class="timeline-title">B.Tech – Electronics & Communication Engineering (AI)</h4>
-                        <p class="timeline-subtitle">Indira Gandhi Delhi Technical University for Women (IGDTUW), New Delhi</p>
-                        <p class="timeline-date">Aug 2024 – Present</p>
-                        <ul class="timeline-details">
-                            <li><strong>Current CGPA:</strong> 7.76 / 10.0</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="research section-spacing">
-        <div class="container fade-in">
-            <h2 class="section-title">Research</h2>
-            <div class="card soft-shadow highlight-border">
-                <div class="research-header">
-                    <h3>Design and Analysis of a Slot-Modified Rectangular Patch Antenna</h3>
-                    <span class="date-badge">Jan 2025</span>
-                </div>
-                <p class="research-authors"><strong>Author:</strong> Tiya Garg &nbsp;|&nbsp; IGDTUW, New Delhi</p>
-                <div class="detailed-list mt-2">
-                    <p>Engineered and simulated a 47 GHz V-band microstrip patch antenna using Ansys HFSS, optimizing slot-geometry to achieve high radiation efficiency.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience & Projects Section -->
-    <section id="experience" class="experience section-spacing alt-bg">
-        <div class="container">
-            <h2 class="section-title fade-in">Work & Project Experience</h2>
-            <div class="projects-list">
-                
-                <div class="card soft-shadow fade-in">
-                    <div class="card-header">
-                        <div>
-                            <h3 class="role">Generative AI Intern</h3>
-                            <p class="organization">IGDTUW</p>
-                        </div>
-                        <span class="date-badge">Jun 2025 – Jul 2025</span>
-                    </div>
-                    <div class="detailed-list">
-                        <ul>
-                            <li>Built <strong>LipiVerse</strong>, an emotion-preserving multilingual poem translation system, using transformer-based pipelines to translate poetry across 3 Indian language pairs while preserving tone and cultural nuance.</li>
-                            <li>Designed structured prompt pipelines to constrain model outputs and reduce semantic drift during translation.</li>
-                            <li>Evaluated translation quality via comparative semantic analysis, benchmarking structured-prompt outputs against baseline prompting.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card soft-shadow fade-in">
-                    <div class="card-header">
-                        <div>
-                            <h3 class="role">FreqBridge <a href="https://github.com/TiyaGarg06/FreqBridge-" target="_blank" class="project-link" aria-label="FreqBridge GitHub repo"><i class="fab fa-github"></i></a></h3>
-                            <p class="organization">Multi-Agent Energy Market Simulation &middot; Python, FastAPI, WebSockets</p>
-                        </div>
-                        <span class="date-badge">Jul 2026</span>
-                    </div>
-                    <div class="detailed-list">
-                        <ul>
-                            <li>Integrated live weather-data feeds into a decentralized multi-agent double-auction market simulation modeling Japan's 50Hz/60Hz split-grid interconnection.</li>
-                            <li>Debugged critical correctness issues affecting market-clearing outputs, including a swing-equation ODE propagation bug, a converter-capacity parameter mismatch, and an agent-count discrepancy.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card soft-shadow fade-in">
-                    <div class="card-header">
-                        <div>
-                            <h3 class="role">EventGuard <a href="https://github.com/TiyaGarg06/EventGuard" target="_blank" class="project-link" aria-label="EventGuard GitHub repo"><i class="fab fa-github"></i></a></h3>
-                            <p class="organization">Real-Time Traffic Incident Command Platform &middot; Flask, Leaflet.js, PuLP</p>
-                        </div>
-                        <span class="date-badge">Jun 2026</span>
-                    </div>
-                    <div class="detailed-list">
-                        <ul>
-                            <li>Built a constrained resource-allocation engine solving a multi-objective knapsack problem (PuLP / Linear Programming) — allocating limited emergency-response capacity under budget and coverage constraints, directly transferable to budget- or portfolio-allocation problems.</li>
-                            <li>Designed and built the REST API backend (Flask) and an interactive geospatial dashboard (Leaflet.js) serving a live ML-driven incident-response pipeline for Bengaluru.</li>
-                            <li>Implemented real-time map-based incident triage, drag-and-drop batch CSV processing, and dynamic route rendering under simulated congestion shockwaves.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card soft-shadow fade-in">
-                    <div class="card-header">
-                        <div>
-                            <h3 class="role">DistribuQ <a href="https://github.com/TiyaGarg06/DistribuQ" target="_blank" class="project-link" aria-label="DistribuQ GitHub repo"><i class="fab fa-github"></i></a></h3>
-                            <p class="organization">Distributed Fault-Tolerant Task Scheduler &middot; Go, net/rpc</p>
-                        </div>
-                        <span class="date-badge status-ongoing">Jun 2026 – Present</span>
-                    </div>
-                    <div class="detailed-list">
-                        <ul>
-                            <li>Building a distributed task scheduler in Go with net/rpc-based node coordination, Raft-inspired leader election, and fault recovery under simulated network partitions.</li>
-                            <li>Independent project pursued for systems-level depth in concurrency and distributed computing.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section-spacing">
-        <div class="container fade-in">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                
-                <div class="skill-category card soft-shadow glass">
-                    <div class="skill-icon"><i class="fas fa-code"></i></div>
-                    <h3>Languages</h3>
-                    <div class="tags-container">
-                        <span class="tag">Python</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">C</span>
-                        <span class="tag">R</span>
-                        <span class="tag">SQL</span>
-                    </div>
-                </div>
-
-                <div class="skill-category card soft-shadow glass">
-                    <div class="skill-icon"><i class="fas fa-server"></i></div>
-                    <h3>Systems & Backend</h3>
-                    <div class="tags-container">
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">REST API Design</span>
-                        <span class="tag">WebSockets</span>
-                        <span class="tag">Git</span>
-                    </div>
-                </div>
-
-                <div class="skill-category card soft-shadow glass">
-                    <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                    <h3>ML / AI</h3>
-                    <div class="tags-container">
-                        <span class="tag">LightGBM</span>
-                        <span class="tag">CatBoost</span>
-                        <span class="tag">scikit-learn</span>
-                        <span class="tag">NLP Pipelines</span>
-                        <span class="tag">Prompt Engineering</span>
-                        <span class="tag">LLM Integration</span>
-                    </div>
-                </div>
-
-                <div class="skill-category card soft-shadow glass">
-                    <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Frontend</h3>
-                    <div class="tags-container">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">HTML/CSS</span>
-                        <span class="tag">Leaflet.js</span>
-                    </div>
-                </div>
-
-                <div class="skill-category card soft-shadow glass">
-                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud & Optimization</h3>
-                    <div class="tags-container">
-                        <span class="tag">Google Cloud Platform</span>
-                        <span class="tag">Vertex AI</span>
-                        <span class="tag">PuLP (Linear Programming)</span>
-                        <span class="tag">OSMnx</span>
-                        <span class="tag">NetworkX</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Leadership & Certifications Section -->
-    <section class="leadership section-spacing alt-bg" id="misc">
-        <div class="container">
-            <div class="grid-layout">
-                <div class="leadership-content fade-in card soft-shadow">
-                    <h2 class="section-title-sm">Achievements</h2>
-
-                    <div class="activity-item mt-2">
-                        <h4 class="role">FAR AWAY 2026 (Zuup) — Top 6% Internationally</h4>
-                        <span class="date-text">2026</span>
-                        <p class="text-sm">Ranked in the top 6% internationally (250 of 4,000+ teams) for FreqBridge.</p>
-                    </div>
-
-                    <div class="activity-item mt-2">
-                        <h4 class="role">Google Build with Gemini — Round 2</h4>
-                        <span class="date-text">2026</span>
-                        <p class="text-sm">Advanced to Round 2 for The Second Shift, an AI-driven career re-entry platform for women.</p>
-                    </div>
-
-                    <div class="activity-item mt-2">
-                        <h4 class="role">UX Voyage, NSUT — Round 2</h4>
-                        <span class="date-text">2026</span>
-                        <p class="text-sm">Advanced to Round 2 of UX Voyage.</p>
-                    </div>
-
-                    <h2 class="section-title-sm mt-2">Leadership & Academic Activities</h2>
-
-                    <div class="activity-item mt-2">
-                        <h4 class="role">Deputy Director General – IGDTUW MUN 2026</h4>
-                        <span class="date-text">Feb 2026</span>
-                        <p class="text-sm">Coordinated organising committee operations and facilitated structured inter-team collaboration.</p>
-                    </div>
-
-                    <div class="activity-item mt-2">
-                        <h4 class="role">Media Head – BHAV Society</h4>
-                        <span class="date-text">Jul 2025 – Present</span>
-                        <p class="text-sm">Led digital communications and content strategy; managed structured publication workflow.</p>
-                    </div>
-                </div>
-
-                <div class="certs-content fade-in card soft-shadow">
-                    <h2 class="section-title-sm">Certifications</h2>
-                    <ul class="cert-list mt-2">
-                        <li>
-                            <i class="fas fa-award text-accent"></i> 
-                            <div>
-                                <strong>Generative AI & Prompt Engineering</strong>
-                                <span>2025</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-certificate text-accent"></i>
-                            <div>
-                                <strong>A2 Zertifikat (German)</strong>
-                                <span>2022</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Beyond the Screen Section -->
-    <section class="hobbies section-spacing" id="hobbies">
-        <div class="container fade-in">
-            <h2 class="section-title">Beyond the Screen</h2>
-            <div class="grid-layout">
-                <div class="card glass soft-shadow hover-float">
-                    <div class="hobby-icon">🌍</div>
-                    <h3>Exploring the World</h3>
-                    <p class="text-secondary">I love packing a bag and traveling to new places. Experiencing different cultures gives me a fresh perspective that fuels my creative problem-solving in tech.</p>
-                </div>
-                <div class="card glass soft-shadow hover-float">
-                    <div class="hobby-icon">🧗‍♀️</div>
-                    <h3>Adventure Activities</h3>
-                    <p class="text-secondary">Whether scaling a trail or diving into the unknown, I absolutely love the thrill of adventure activities. Pushing my limits outdoors keeps my mind sharp!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-left">
-                <p>&copy; 2026 Tiya Garg. Designing the future with AI.</p>
-            </div>
-            <div class="footer-keywords">
-                <p><strong>Keywords:</strong> Distributed Systems &middot; Backend Engineering &middot; Go &middot; Python &middot; NLP &middot; GenAI &middot; SWE Internship 2027</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    <!-- JSON-LD Structured Data for Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tiya Garg",
+        "jobTitle": "Software Engineer & AI/ML Researcher",
+        "url": "https://tiya-garg.github.io/Portfolio/",
+        "sameAs": [
+          "https://linkedin.com/in/tiya-garg-a72b2931a",
+          "https://github.com/Tiya-Garg"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Indira Gandhi Delhi Technical University for Women (IGDTUW)"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
